@@ -5,6 +5,7 @@ import 'package:navigation_curved/Hal2.dart';
 import 'package:navigation_curved/Hal3.dart';
 import 'package:navigation_curved/Hal4.dart';
 import 'package:navigation_curved/Hal5.dart';
+import 'package:navigation_curved/Hal6.dart';
 
 class NavBar extends StatefulWidget {
   @override
@@ -14,14 +15,22 @@ class NavBar extends StatefulWidget {
 class _NavBarState extends State<NavBar> {
   int selectedPage = 0;
 
-  final _halaman = [Hal1(), Hal2(), Hal3(), Hal4(), Hal5()];
+  final _halaman = [
+    Hal1(),
+    Hal2(),
+    Hal3(),
+    Hal4(),
+    Hal5(),
+    Hal6(),
+  ];
 
   final bgcolor = [
     Colors.blue,
     Colors.red,
     Colors.black,
     Colors.purple,
-    Colors.green
+    Colors.green,
+    Colors.white
   ];
 
   @override
@@ -57,6 +66,11 @@ class _NavBarState extends State<NavBar> {
             ),
             Icon(
               Icons.person_add_sharp,
+              size: 30,
+              color: Colors.black,
+            ),
+            Icon(
+              Icons.add_business_rounded,
               size: 30,
               color: Colors.black,
             ),
